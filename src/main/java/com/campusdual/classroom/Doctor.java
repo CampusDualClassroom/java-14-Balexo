@@ -8,4 +8,10 @@ public class Doctor extends Person {
 		super(name, surname);
 		this.specialization = specialization;
 	}
+
+	@Override
+	public void getDetails(){
+		System.out.println("El nombre es " + this.name + " " + this.surname +
+				" y especialista en " + this.specialization);
+	}
 }
